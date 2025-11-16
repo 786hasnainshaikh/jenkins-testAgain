@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
- <h1>this is about page</h1>
-  <p>this is  paragaraph</p>
-
+  <h1>this is service page</h1>
 </body>
 </html>
