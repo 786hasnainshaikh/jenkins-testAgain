@@ -7,7 +7,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY target/jenkins.war /usr/local/tomcat/webapps/jenkins.war
 
 # Expose Tomcat port
-EXPOSE 8080
+EXPOSE 9090
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
