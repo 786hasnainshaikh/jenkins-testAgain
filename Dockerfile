@@ -6,7 +6,10 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copy your WAR file to Tomcat webapps folder
 COPY target/jenkins.war /usr/local/tomcat/webapps/jenkins.war
 
-# Expose Tomcat port
+# Change Tomcat port
+RUN sed -i 's/port="8080"/port="9090"/' /usr/local/tomcat/conf/server.xml
+
+# Expose the new port
 EXPOSE 9090
 
 # Start Tomcat
